@@ -7,3 +7,5 @@ alembic.ini
 alembic/
 assets/external/
 uploaded_files/
+.venv
+venv
