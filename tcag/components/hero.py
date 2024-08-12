@@ -117,7 +117,7 @@ def hero_section():
                 rx.vstack(
                     rx.vstack(
                         rx.heading(
-                            "Genomic Valley",
+                            "T-CAG Life Sciences",
                             color="white",
                             style={
                                 "fontSize": "30px",
