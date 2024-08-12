@@ -122,6 +122,7 @@ def hero_section():
                             style={
                                 "fontSize": "30px",
                                 "lineHeight": "clamp(1.2, 4vw, 2em)",
+                                "text_align": "center"
                             },
                         ),
                         type_animation(
