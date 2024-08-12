@@ -1,11 +1,11 @@
 *.db
 *.py[cod]
 .env
+.venv
 .web
 __pycache__/
 alembic.ini
 alembic/
 assets/external/
 uploaded_files/
-.venv
 venv

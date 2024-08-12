@@ -161,13 +161,13 @@ def image_gallery() -> rx.Component:
                     carousel(
                         *[
                             rx.image(
-                                src=f"/c{i}.png",
+                                src=f"/c{i}.jpg",
                                 width="100%",
                                 height="300px",  # Match the carousel height
                                 object_fit="contain",  # Changed to 'contain' to fit the entire image
                                 background_color="black",  # Optional: adds a background color
                             )
-                            for i in range(1, 17)
+                            for i in range(1, 4)
                         ],
                     ),
                     width="100%",
