@@ -59,7 +59,7 @@ def navbar_white() -> rx.Component:
                 rx.hstack(
                     rx.link(
                         rx.image(
-                            src="/logo2.png", alt="TCAG", max_height="140px"
+                            src="/logo_green.png", alt="TCAG", max_height="140px"
                         ),
                         href="/",
                     ),

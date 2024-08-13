@@ -11,7 +11,7 @@ from tcag.components.testimonials import testimonials_section
 from tcag.components.about_section import about_section
 
 
-@rx.page(title="T-CAG Life Sciences")
+@rx.page(title="T-CAG LifeSciences")
 def index():
     return rx.vstack(
         navbar(),

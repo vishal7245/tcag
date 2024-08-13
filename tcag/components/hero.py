@@ -49,7 +49,7 @@ def hero_section():
             rx.box(
                 rx.vstack(
                     rx.vstack(
-                        rx.heading("T-CAG Life Sciences", color="white", style=heading_font),
+                        rx.heading("T-CAG LifeSciences", color="white", style=heading_font),
                         type_animation(
                             sequence=[
                                 "Where Health Meets Technology.",
@@ -117,7 +117,7 @@ def hero_section():
                 rx.vstack(
                     rx.vstack(
                         rx.heading(
-                            "T-CAG Life Sciences",
+                            "T-CAG LifeSciences",
                             color="white",
                             style={
                                 "fontSize": "30px",

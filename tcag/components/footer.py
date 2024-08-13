@@ -80,7 +80,7 @@ def footer() -> rx.Component:
                         rx.vstack(
                             rx.hstack(
                                 rx.heading(
-                                    "T-CAG Life Sciences",
+                                    "T-CAG LifeSciences",
                                     size="7",
                                     weight="bold",
                                     color="black",
@@ -125,7 +125,7 @@ def footer() -> rx.Component:
                 rx.vstack(
                     rx.vstack(
                         rx.heading(
-                            "T-CAG Life Sciences",
+                            "T-CAG LifeSciences",
                             size="6",
                             weight="bold",
                             color="black",

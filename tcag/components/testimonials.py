@@ -110,17 +110,17 @@ def testimonials_section() -> rx.Component:
                         card(
                             "Amit",
                             "@DrAmit",
-                            "T-CAG Life Sciences will be a trailblazer in integrating Next-Generation Sequencing and AI into healthcare. Their expertise and commitment to innovation will be evident in the precision and reliability of their diagnostic services. As a healthcare provider, I will trust their data and solutions to enhance patient outcomes and support informed decision-making.",
+                            "T-CAG LifeSciences will be a trailblazer in integrating Next-Generation Sequencing and AI into healthcare. Their expertise and commitment to innovation will be evident in the precision and reliability of their diagnostic services. As a healthcare provider, I will trust their data and solutions to enhance patient outcomes and support informed decision-making.",
                         ),
                         card(
                             "Mohit",
                             "@DrMohit",
-                            "T-CAG Life Sciences will be transformative. Their advanced AI-based genome healthcare research will provide us with invaluable insights into genetic patterns, driving innovation in our personalized medicine approaches. Their dedication to excellence and cutting-edge technology will be truly commendable.",
+                            "T-CAG LifeSciences will be transformative. Their advanced AI-based genome healthcare research will provide us with invaluable insights into genetic patterns, driving innovation in our personalized medicine approaches. Their dedication to excellence and cutting-edge technology will be truly commendable.",
                         ),
                         card(
                             "Shikha",
                             "@DrShikha",
-                            "The personalized healthcare services at T-CAG Life Sciences will revolutionize our approach to patient care. By tailoring treatments based on unique genetic profiles, they will ensure our patients receive the most effective therapies with minimal adverse effects. Their expertise in NGS and AI will be unmatched, making them an invaluable partner in our healthcare journey.",
+                            "The personalized healthcare services at T-CAG LifeSciences will revolutionize our approach to patient care. By tailoring treatments based on unique genetic profiles, they will ensure our patients receive the most effective therapies with minimal adverse effects. Their expertise in NGS and AI will be unmatched, making them an invaluable partner in our healthcare journey.",
                         ),
                         columns="3",
                         spacing="5",
@@ -167,17 +167,17 @@ def testimonials_section() -> rx.Component:
                     mobile_card(
                         "Amit",
                         "@DrAmit",
-                        "T-CAG Life Sciences will be a trailblazer in integrating Next-Generation Sequencing and AI into healthcare. Their expertise and commitment to innovation will be evident in the precision and reliability of their diagnostic services. As a healthcare provider, I will trust their data and solutions to enhance patient outcomes and support informed decision-making.",
+                        "T-CAG LifeSciences will be a trailblazer in integrating Next-Generation Sequencing and AI into healthcare. Their expertise and commitment to innovation will be evident in the precision and reliability of their diagnostic services. As a healthcare provider, I will trust their data and solutions to enhance patient outcomes and support informed decision-making.",
                     ),
                     mobile_card(
                         "Mohit",
                         "@DrMohit",
-                        "T-CAG Life Sciences will be transformative. Their advanced AI-based genome healthcare research will provide us with invaluable insights into genetic patterns, driving innovation in our personalized medicine approaches. Their dedication to excellence and cutting-edge technology will be truly commendable.",
+                        "T-CAG LifeSciences will be transformative. Their advanced AI-based genome healthcare research will provide us with invaluable insights into genetic patterns, driving innovation in our personalized medicine approaches. Their dedication to excellence and cutting-edge technology will be truly commendable.",
                     ),
                     mobile_card(
                         "Shikha",
                         "@DrShikha",
-                        "The personalized healthcare services at T-CAG Life Sciences will revolutionize our approach to patient care. By tailoring treatments based on unique genetic profiles, they will ensure our patients receive the most effective therapies with minimal adverse effects. Their expertise in NGS and AI will be unmatched, making them an invaluable partner in our healthcare journey.",
+                        "The personalized healthcare services at T-CAG LifeSciences will revolutionize our approach to patient care. By tailoring treatments based on unique genetic profiles, they will ensure our patients receive the most effective therapies with minimal adverse effects. Their expertise in NGS and AI will be unmatched, making them an invaluable partner in our healthcare journey.",
                     ),
                     spacing="4",
                     width="100%",

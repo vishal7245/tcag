@@ -6,6 +6,7 @@ from .pages import (
     research_services,
     page_not_found,
     news_and_updates,
+    collaboration
 )
 
 __all__ = [
@@ -16,4 +17,5 @@ __all__ = [
     "research_services",
     "page_not_found",
     "news_and_updates",
+    "collaboration"
 ]
