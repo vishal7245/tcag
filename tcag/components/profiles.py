@@ -167,132 +167,54 @@ def romasha_gupta_profile():
             )
         )
     
-def sanjoy_gupta_profile():
+
+
+def roopak_kumar_profile():
     return rx.vstack(
-        rx.heading("Mr. Sanjoy Gupta"),
-        rx.box(
-            rx.heading("Education", size="4"),
-            rx.unordered_list(
-                rx.list_item("Masters in Chemistry - Delhi University, India"),
-                rx.list_item("Post Graduate Diploma in Business Administration - AIMA, India"),
-                rx.list_item("Post Graduate Diploma in Operation Research - ORSI, India"),
-                rx.list_item("Post Graduate Diploma in Web Technologies")
-            )
-        ),
-        rx.box(
-            rx.heading("Professional Experience", size="4"),
-            rx.unordered_list(
-                rx.list_item("12 years of experience as Research Officer in Limited Chemical Industry"),
-                rx.list_item("20+ years of accomplished experience in Project Planning, Execution, and Management")
-            )
-        ),
-        rx.box(
-            rx.heading("Technical Skills", size="4"),
-            rx.unordered_list(
-                rx.list_item("Proficient in project monitoring tools such as MS-Project, Primavera"),
-                rx.list_item("Experienced with Oracle for purchase order requisition and materials management"),
-                rx.list_item("Skilled in ERP Module-SAP R3")
-            )
-        ),
-        rx.box(
-            rx.heading("Project Management Expertise", size="4"),
-            rx.unordered_list(
-                rx.list_item("Comprehensive understanding of monitoring and controlling project activities"),
-                rx.list_item("Handling complete project life cycle management, including scheduling and financial handling"),
-                rx.list_item("Ensuring successful project execution")
-            )
-        ),
-        rx.box(
-            rx.heading("Personal Attributes", size="4"),
-            rx.unordered_list(
-                rx.list_item("Hands-on management style with a focus on enablement and empowerment"),
-                rx.list_item("Believes in creating a cohesive working environment that encourages high performance"),
-                rx.list_item("Energetic and passionate with excellent analytical, relationship management, and communication skills"),
-                rx.list_item("Experienced in building and leading large, high-performance, client-focused teams")
-            )
-        ),
-        rx.box(
-            rx.heading("Specialties", size="4"),
-            rx.unordered_list(
-                rx.list_item("Project Management & Site Interface"),
-                rx.list_item("Contract Management"),
-                rx.list_item("Monitoring & Controlling"),
-                rx.list_item("Experience in Turnkey Projects"),
-                rx.list_item("Project Planning & Control"),
-                rx.list_item("Operation & Maintenance"),
-                rx.list_item("Erection & Commissioning"),
-                rx.list_item("Project Portfolio Management"),
-                rx.list_item("Engineering Coordination"),
-                rx.list_item("Project Estimation"),
-                rx.list_item("Process Enhancement"),
-                rx.list_item("Quality Assurance")
-            )
-        )
-    )
-    
-def vipul_garg_profile():
-    return rx.vstack(
-        rx.heading("Mr. Vipul Garg"),
+        rx.heading("Dr. Roopak Kumar"),
         
         rx.box(
             rx.heading("Current Position", size="4"),
+            rx.text("Associate Professor at Veena Vadini Ayurved College, Bhopal, Madhya Pradesh (M.P.)")
+        ),
+        
+        rx.box(
+            rx.heading("Qualifications", size="4"),
             rx.unordered_list(
-                rx.list_item("Handling Business Development and Corporate Strategy at Genomic Valley Biotech Limited")
+                rx.list_item("B.A.M.S (Bachelor of Ayurvedic Medicine and Surgery)"),
+                rx.list_item("M.D. (Panchakarma)"),
+                rx.list_item("P.G.D.Y.T. (Post Graduate Diploma in Yoga Therapy)"),
+                rx.list_item("C.Ch. (Certificate in Child Health)")
             )
         ),
         
         rx.box(
-            rx.heading("Personal Attributes", size="4"),
-            rx.unordered_list(
-                rx.list_item("Highly energetic and dynamic individual"),
-                rx.list_item("Entrepreneur at heart"),
-                rx.list_item("Extensive experience in various industries including Agribusiness, Solar, Electrical T&D, HVAC, Tyres, Hospitality, and Rice Milling")
-            )
-        ),
-        
-        rx.box(
-            rx.heading("Education", size="4"),
-            rx.unordered_list(
-                rx.list_item("MBA in Marketing and Finance from MDI Gurgaon"),
-                rx.list_item("Mechanical Engineer from NIT Allahabad")
-            )
-        ),
-        
-        rx.box(
-            rx.heading("Work Profile", size="4"),
-            rx.unordered_list(
-                rx.list_item("AV Greenworld: Extensive involvement in business development and corporate strategy"),
-                rx.list_item("Paawan Energy: Experience in project management and financial planning"),
-                rx.list_item("Satyawati Rice Mill: Worked on project costing and viability studies"),
-                rx.list_item("ABB Limited: Contributed to marketing research and consumer behavior analysis"),
-                rx.list_item("Internships:",
-                    rx.unordered_list(
-                        rx.list_item("Michelin India"),
-                        rx.list_item("NHPC"),
-                        rx.list_item("Medhavi Foundation")
-                    )
-                )
-            )
-        ),
-        
-        rx.box(
-            rx.heading("Achievements", size="4"),
-            rx.unordered_list(
-                rx.list_item("Winner of several national and international competitions"),
-                rx.list_item("Highlight: Wild Card Finalist and Semi-Finalist in HUL LIME 4, 2013")
-            )
-        ),
-        
-        rx.box(
-            rx.heading("Specialties", size="4"),
-            rx.unordered_list(
-                rx.list_item("Business Development"),
-                rx.list_item("Marketing Research & Consumer Behavior"),
-                rx.list_item("Corporate Strategy"),
-                rx.list_item("Project & Financial Planning"),
-                rx.list_item("Project Costing and Viability Study"),
-                rx.list_item("Project Management")
-            )
+            rx.heading("Experience", size="4"),
+            rx.text("Over 17 years of experience in Academics and Research")
         )
     )
-
+    
+def shikha_profile():
+    return rx.vstack(
+        rx.heading("Dr. Shikha"),
+        
+        rx.box(
+            rx.heading("Position", size="4"),
+            rx.text("Senior Analyst at T-CAG LifeSciences")
+        ),
+        
+        rx.box(
+            rx.heading("Expertise", size="4"),
+            rx.text("Extensive experience in Genomics and DNA Sequencing Technologies")
+        ),
+        
+        rx.box(
+            rx.heading("Contributions", size="4"),
+            rx.text("Successfully contributed to over 50 projects within the company")
+        ),
+        
+        rx.box(
+            rx.heading("Role", size="4"),
+            rx.text("Plays a vital role in advancing innovative solutions in the field")
+        )
+    )

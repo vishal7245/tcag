@@ -72,7 +72,7 @@ def hero_section():
                                 size="3",
                                 color_scheme="teal",
                                 on_click=rx.download(
-                                    url="/Genomic Valley-Brochure.pdf",
+                                    url="/tcag-brochure.pdf",
                                 ),
                             ),
                             rx.link(

@@ -1,8 +1,8 @@
 import reflex as rx
 from tcag.components.profiles import yogesh_agrawal_profile
 from tcag.components.profiles import romasha_gupta_profile
-from tcag.components.profiles import sanjoy_gupta_profile
-from tcag.components.profiles import vipul_garg_profile
+from tcag.components.profiles import roopak_kumar_profile
+from tcag.components.profiles import shikha_profile
 
 standard_card_style = {
     "background_color": "rgba(128,212,148,0.2)",
@@ -83,7 +83,9 @@ def team_section() -> rx.Component:
                         size="5", align="center", margin_bottom="1em", color="gray"
                     ),
                     rx.grid(
+                        profile_card("/drroopak.jpeg", "Dr. Roopak Kumar", "Director", roopak_kumar_profile()),
                         profile_card("/ya.jpeg", "Mr. Yogesh Agrawal", "Advisor", yogesh_agrawal_profile()),
+                        profile_card("/drshikha.jpeg", "Dr. Shikha", "Senior Analyst", shikha_profile()),
                         profile_card("/rg.jpeg", "Ms. Romasha Gupta", "Project Manager", romasha_gupta_profile()),
                         columns = "4",
                         spacing = "3",
@@ -105,9 +107,9 @@ def team_section() -> rx.Component:
                     size="4", align="center", margin_bottom="1em", color="gray"
                 ),
                 rx.vstack(
-                    profile_card("/ya.jpeg", "Mr. Yogesh Agrawal", "Chairman", yogesh_agrawal_profile()),
-                    profile_card("/vg.jpg", "Mr. Vipul Garg", "Executive Assistant to MD", vipul_garg_profile()),
-                    profile_card("/sg.jpg", "Mr. Sanjoy Gupta", "General Manager", sanjoy_gupta_profile()),
+                    profile_card("/drroopak.jpeg", "Dr. Roopak Kumar", "Director", roopak_kumar_profile()),
+                    profile_card("/ya.jpeg", "Mr. Yogesh Agrawal", "Advisor", yogesh_agrawal_profile()),
+                    profile_card("/drshikha.jpeg", "Dr. Shikha", "Senior Analyst", shikha_profile()),
                     profile_card("/rg.jpeg", "Ms. Romasha Gupta", "Project Manager", romasha_gupta_profile()),
                     spacing="4",
                     width="100%",
