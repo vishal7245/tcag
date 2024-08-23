@@ -378,14 +378,19 @@ def navbar() -> rx.Component:
                         rx.menu.sub(
                             rx.menu.sub_trigger("Services"),
                             rx.menu.sub_content(
-                                rx.menu.item(
-                                    "Diagnostic Services",
-                                    on_click=lambda: redirect("/diagnostic-services"),
-                                ),
-                                rx.menu.item(
-                                    "Research Services",
-                                    on_click=lambda: redirect("/research-services"),
-                                ),
+                                rx.menu.item("Diagnostics Services", on_click=lambda: redirect("/diagnostic-services")),
+                                rx.menu.item("Research Services", on_click=lambda: redirect("/research-services")),
+                                rx.menu.item("Human Oncology Testing"),
+                                rx.menu.item("Infectious Disease Testing"),
+                                rx.menu.item("Genetic Disorders Testing"),
+                                rx.menu.item("Cancer Research"),
+                                rx.menu.item("NGS Services"),
+                                rx.menu.item("WGS"),
+                                rx.menu.item("WES"),
+                                rx.menu.item("Targeted Sequencing"),
+                                rx.menu.item("RNA Sequencing (RNA-Seq)"),
+                                rx.menu.item("Single-cell Sequencing"),
+                                rx.menu.item("Metagenomics Testing"),
                             ),
                         ),
                         rx.menu.item("Contact", on_click=lambda: redirect("/contact")),
