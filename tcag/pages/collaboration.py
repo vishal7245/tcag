@@ -29,7 +29,7 @@ def collaboration():
                 ),
                 rx.list.unordered(
                     rx.list.item(rx.text("We are in collaboration with ARTEMIS Hospital and have signed an MoU for advanced healthcare initiatives.", style=list_style), color="black"),
-                    rx.list.item(rx.text("We have partnered with ARTEMIS Hospital and signed a Memorandum of Understanding (MoU) to pursue advanced healthcare initiatives.", style=list_style), color="black"),
+                    rx.list.item(rx.text("We have partnered with Mahajan Imaging and signed a Memorandum of Understanding (MoU) to pursue advanced healthcare initiatives.", style=list_style), color="black"),
                     rx.list.item(rx.text("We are in collaboration with the Institute of Liver and Biliary Sciences and have signed an MoU for specialized research and treatment.", style=list_style), color="black"),
                     rx.list.item(rx.text("We are in collaboration with Genomic Valley Bharat Pvt. Ltd. and have signed an MoU for genomic research and development.", style=list_style), color="black"),
                 ),
