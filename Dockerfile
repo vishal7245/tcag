@@ -1,70 +1,26 @@
-# This docker file is intended to be used with docker compose to deploy a production
-# instance of a Reflex app.
+# This Dockerfile is used to deploy a simple single-container Reflex app instance.
+FROM python:3.13
 
-# Stage 1: init
-FROM python:3.13 as init
-
-ARG uv=/root/.local/bin/uv
-
-# Install `uv` for faster package bootstrapping
-ADD --chmod=755 https://astral.sh/uv/install.sh /install.sh
-RUN /install.sh && rm /install.sh
+RUN apt-get update && apt-get install -y redis-server && rm -rf /var/lib/apt/lists/*
+ENV REDIS_URL=redis://localhost PYTHONUNBUFFERED=1
 
 # Copy local context to `/app` inside container (see .dockerignore)
 WORKDIR /app
 COPY . .
-RUN mkdir -p /app/data /app/uploaded_files
 
-# Create virtualenv which will be copied into final container
-ENV VIRTUAL_ENV=/app/.venv
-ENV PATH="$VIRTUAL_ENV/bin:$PATH"
-RUN $uv venv
-
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
-
-# Install system dependencies
-RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
-
-# Install Node.js
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
-    && apt-get install -y nodejs \
-    && rm -rf /var/lib/apt/lists/*
-
-# Install Bun
-RUN curl -fsSL https://bun.sh/install | bash
-
-# Add Bun to PATH
-ENV PATH="/root/.bun/bin:${PATH}"
-# Install app requirements and reflex inside virtualenv
-RUN $uv pip install -r requirements.txt
+# Install app requirements and reflex in the container
+RUN pip install -r requirements.txt
 
 # Deploy templates and prepare app
 RUN reflex init
 
-# Export static copy of frontend to /app/.web/_static
+# Download all npm dependencies and compile frontend
 RUN reflex export --frontend-only --no-zip
-
-# Copy static files out of /app to save space in backend image
-RUN mv .web/_static /tmp/_static
-RUN rm -rf .web && mkdir .web
-RUN mv /tmp/_static .web/_static
-
-# Stage 2: copy artifacts into slim image 
-FROM python:3.13-slim
-WORKDIR /app
-RUN adduser --disabled-password --home /app reflex
-COPY --chown=reflex --from=init /app /app
-# Install libpq-dev for psycopg (skip if not using postgres).
-RUN apt-get update -y && apt-get install -y libpq-dev && rm -rf /var/lib/apt/lists/*
-USER reflex
-ENV PATH="/app/.venv/bin:$PATH" PYTHONUNBUFFERED=1
 
 # Needed until Reflex properly passes SIGTERM on backend.
 STOPSIGNAL SIGKILL
 
 # Always apply migrations before starting the backend.
 CMD [ -d alembic ] && reflex db migrate; \
-    exec reflex run --env prod --backend-only
+    redis-server --daemonize yes && \
+    exec reflex run --env prod
