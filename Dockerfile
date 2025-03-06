@@ -35,4 +35,4 @@ COPY . .
 EXPOSE 3003 8003
 
 # Command to run the application
-CMD ["reflex", "run", "--env", "prod"] 
+CMD ["reflex", "run", "--env", "prod", "--frontend-only"] 
