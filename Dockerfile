@@ -10,6 +10,14 @@ ARG uv=/root/.local/bin/uv
 ADD --chmod=755 https://astral.sh/uv/install.sh /install.sh
 RUN /install.sh && rm /install.sh
 
+# Install system dependencies
+RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+
+# Install Node.js
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs \
+    && rm -rf /var/lib/apt/lists/*
+
 # Copy local context to `/app` inside container (see .dockerignore)
 WORKDIR /app
 COPY . .
