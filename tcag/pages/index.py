@@ -19,7 +19,6 @@ def index():
         about_section(),
         services_section(),
         faq_section(),
-        testimonials_section(),
         image_gallery(),
         contact_section(),
         footer(),
